@@ -45,8 +45,10 @@ main {
   background: transparent;
   text-align: center;
   padding: 10px 20px;
-  margin-top: 40px;
-  position: static;
+  margin-top: -60px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 5;
 
 }
 
