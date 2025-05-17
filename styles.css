@@ -10,7 +10,7 @@ html, body {
 }
 
 main {
-  padding: 0;
+  padding-bottom: 120px;
 }
 
 .seccion {
@@ -31,22 +31,24 @@ main {
 
 .logo-hero {
   max-width: 160px;
-  margin-top: -20px;
+  margin-top: 0px;
   margin-bottom: 80px;
 }
 
 .obra-hero {
   max-height: 75vh;
   width: auto;
-  margin-top: -180px;
+  margin-top: -160px;
 }
 
 .nav-bottom {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.6);
   text-align: center;
   padding: 20px;
-  position: relative;
-  z-index: 5;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 20;
 }
 
 nav ul {
@@ -63,6 +65,34 @@ nav a {
   color: #111;
   font-weight: bold;
   cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  width: 100%;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  padding: 12px;
+  background-color: #111;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
 }
 
 @keyframes fadeIn {

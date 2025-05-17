@@ -13,15 +13,6 @@
       <img src="obra.png" alt="Obra Principal" class="obra-hero" />
     </section>
 
-    <nav class="nav-bottom">
-      <ul>
-        <li><a href="#" onclick="mostrarSeccion('hero')">Inicio</a></li>
-        <li><a href="#" onclick="mostrarSeccion('destacadas')">Obras destacadas</a></li>
-        <li><a href="#" onclick="mostrarSeccion('artistas')">Artistas</a></li>
-        <li><a href="#" onclick="mostrarSeccion('formulario')">Enviá tu obra</a></li>
-      </ul>
-    </nav>
-
     <section id="destacadas" class="seccion oculto">
       <h2>Obras destacadas</h2>
       <p>Contenido futuro</p>
@@ -34,9 +25,26 @@
 
     <section id="formulario" class="seccion oculto">
       <h2>Enviá tu obra</h2>
-      <p>Formulario vendrá aquí.</p>
+      <form action="#" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="mensaje">Mensaje o idea curatorial</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <button type="submit">Hacé lugar</button>
+      </form>
     </section>
   </main>
+
+  <nav class="nav-bottom">
+    <ul>
+      <li><a href="#" onclick="mostrarSeccion('hero')">Inicio</a></li>
+      <li><a href="#" onclick="mostrarSeccion('destacadas')">Obras destacadas</a></li>
+      <li><a href="#" onclick="mostrarSeccion('artistas')">Artistas</a></li>
+      <li><a href="#" onclick="mostrarSeccion('formulario')">Enviá tu obra</a></li>
+    </ul>
+  </nav>
 
   <script>
     function mostrarSeccion(id) {
