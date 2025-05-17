@@ -44,7 +44,7 @@ nav a:hover {
 /* Hero */
 #hero {
   height: 100vh;
-  background-color: #e0e0e0; /* tipo cemento alisado */
+  background-color: #e0e0e0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,15 +58,6 @@ nav a:hover {
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   border-radius: 12px;
 }
-.overlay-text {
-  background: rgba(0, 0, 0, 0.6);
-  color: #f9f9f9;
-  padding: 40px 30px;
-  font-size: 32px;
-  font-weight: 300;
-  max-width: 80%;
-  border-radius: 12px;
-  backdrop-filter: blur(6px);}
 
 /* Secciones */
 section {
