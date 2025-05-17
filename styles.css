@@ -44,15 +44,20 @@ nav a:hover {
 /* Hero */
 #hero {
   height: 100vh;
-  background-image: url('firma-destacada.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: #e0e0e0; /* tipo cemento alisado */
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 0 20px;}
+  padding: 40px;
+}
 
+#hero img {
+  max-height: 90vh;
+  max-width: 100%;
+  object-fit: contain;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
 .overlay-text {
   background: rgba(0, 0, 0, 0.6);
   color: #f9f9f9;
