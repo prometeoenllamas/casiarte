@@ -69,15 +69,3 @@ nav a {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-body {
-  position: relative;
-}
-
-.logo-hero {
-  position: absolute;
-  top: 10vh;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 160px;
-  z-index: 10;
-}
