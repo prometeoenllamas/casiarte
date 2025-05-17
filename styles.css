@@ -10,7 +10,7 @@ body {
 header {
   padding: 20px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.6);
+  background: transparent;
 }
 
 nav ul {
@@ -39,7 +39,26 @@ main {
 }
 
 .seccion:not(.oculto) {
-  display: block;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  min-height: 100vh;
+}
+
+.logo-hero {
+  max-width: 400px;
+  width: 80%;
+  height: auto;
+}
+
+.obra-hero {
+  max-height: 70vh;
+  width: auto;
+  border: 2px solid #222;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
 @keyframes fadeIn {
@@ -61,7 +80,7 @@ h2 {
 }
 
 .obra, .artista {
-  background: rgba(255, 255, 255, 0.75);
+  background: transparent;
   border: 1px solid #ccc;
   height: 150px;
   display: flex;
