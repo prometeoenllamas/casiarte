@@ -20,27 +20,27 @@ main {
   min-height: 100vh;
   padding: 40px 20px;
 }
+
 .seccion:not(.oculto) {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100vh;
-  padding: 20px 20px 40px;
   gap: 30px;
 }
 
 .logo-hero {
   max-width: 300px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .obra-hero {
-  max-height: 90vh;
-  margin-top: -100px;
+  max-height: 85vh;
   width: auto;
+  margin-top: -40px;
 }
+
 .nav-bottom {
   background: rgba(255, 255, 255, 0.6);
   text-align: center;
@@ -78,32 +78,14 @@ h2 {
   margin-top: 20px;
 }
 
-.obra, .artista {
+.obra, .artista, form {
   background: transparent;
   border: 1px solid #ccc;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-form {
-  background: transparent;
+  padding: 20px;
 }
 
 input, textarea {
-  background: rgba(255, 255, 255, 0.7); /* opcional, solo para legibilidad */
-}
-
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 600px;
-}
-
-input, textarea {
+  background: rgba(255, 255, 255, 0.7);
   padding: 10px;
   border: 1px solid #ccc;
   font-size: 16px;
