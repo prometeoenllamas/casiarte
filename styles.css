@@ -43,23 +43,25 @@ nav a:hover {
 
 /* Hero */
 #hero {
-  position: relative;
-  height: 60vh;
-  background: #ccc url('firma-destacada.jpg') center/cover no-repeat;
+  height: 100vh;
+  background-image: url('firma-destacada.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  text-align: center;
+  padding: 0 20px;}
 
 .overlay-text {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   color: #f9f9f9;
-  padding: 20px 30px;
-  font-size: 24px;
+  padding: 40px 30px;
+  font-size: 32px;
   font-weight: 300;
-  text-align: center;
-  backdrop-filter: blur(4px);
-}
+  max-width: 80%;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);}
 
 /* Secciones */
 section {
