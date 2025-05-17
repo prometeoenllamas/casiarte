@@ -1,8 +1,84 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('fondo_cemento_web_1920x1080.jpg') no-repeat center center fixed;
+  font-family: sans-serif;
+  background: url('fondo.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  color: #111;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+
+main {
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
+}
+
+.galeria, .artistas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.obra, .artista {
+  background: #fff;
+  border: 1px solid #ccc;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  background-color: #111;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
 }
