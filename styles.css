@@ -44,9 +44,9 @@ main {
 .nav-bottom {
   background: transparent;
   text-align: center;
-  padding: 20px;
-  position: relative;
-  z-index: 5;
+  padding: 10px 20px;
+  margin-top: 40px;
+  position: static;
 
 }
 
