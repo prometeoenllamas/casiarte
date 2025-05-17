@@ -97,10 +97,12 @@ button:hover {
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 60px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 40px 0;
+
 }
 
 .obra {
