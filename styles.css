@@ -18,7 +18,6 @@ main {
   background-size: cover;
   animation: fadeIn 0.4s ease-in-out forwards;
 }
-
 .seccion:not(.oculto) {
   display: flex;
   flex-direction: column;
@@ -36,11 +35,10 @@ main {
 }
 
 .obra-hero {
-  max-height: 85vh;
-  margin-top: -30px;
+  max-height: 90vh;
+  margin-top: -100px;
   width: auto;
 }
-
 .nav-bottom {
   background: rgba(255, 255, 255, 0.6);
   text-align: center;
