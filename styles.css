@@ -1,4 +1,3 @@
-
 html, body {
   height: 100%;
   margin: 0;
@@ -6,105 +5,28 @@ html, body {
   background: url('cemento2025.jpg') repeat-y center top fixed;
   background-size: cover;
   font-family: sans-serif;
-  color: #111;
+  color: black;
 }
 
 main {
-  padding: 0;
-}
-
-.seccion {
-  display: none;
-  animation: fadeIn 0.4s ease-in-out forwards;
-  background: transparent;
-  min-height: 100vh;
-  padding: 40px 20px;
-}
-
-.seccion:not(.oculto) {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 100px;
+  padding: 50px;
 }
 
-.logo-hero {
-  max-width: 300px;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.obra-hero {
-  max-height: 85vh;
-  width: auto;
-  margin-top: -40px;
-}
-
-.nav-bottom {
-  background: rgba(255, 255, 255, 0.6);
+.hero {
   text-align: center;
-  padding: 20px;
-  position: relative;
-  z-index: 5;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: #111;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-h2 {
-  font-size: 24px;
-  border-bottom: 1px solid #aaa;
-  padding-bottom: 5px;
-}
-
-.galeria, .artistas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.obra, .artista, form {
+  padding: 80px;
+  font-size: 2rem;
   background: transparent;
-  border: 1px solid #ccc;
-  padding: 20px;
 }
 
-input, textarea {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 10px;
-  border: 1px solid #ccc;
-  font-size: 16px;
+.bloque {
+  height: 1200px;
+  width: 100%;
+  background: transparent;
 }
 
-button {
-  padding: 12px;
-  background-color: #111;
-  color: white;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #333;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
