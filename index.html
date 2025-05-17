@@ -3,19 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CasiArte — Test de Fondo</title>
+  <title>CasiArte</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main>
-    <section class="hero">
-      <h1>CasiArte</h1>
-      <p>¿Se ve el fondo de cemento?</p>
+    <section id="hero" class="seccion">
+      <img src="logo.png" alt="Logo CasiArte" class="logo-hero" />
+      <img src="obra.png" alt="Obra Principal" class="obra-hero" />
     </section>
-    <section class="bloque">
-      <p>Este bloque sirve para hacer scroll.</p>
+
+    <nav class="nav-bottom">
+      <ul>
+        <li><a href="#" onclick="mostrarSeccion('hero')">Inicio</a></li>
+        <li><a href="#" onclick="mostrarSeccion('destacadas')">Obras destacadas</a></li>
+        <li><a href="#" onclick="mostrarSeccion('artistas')">Artistas</a></li>
+        <li><a href="#" onclick="mostrarSeccion('formulario')">Enviá tu obra</a></li>
+      </ul>
+    </nav>
+
+    <section id="destacadas" class="seccion oculto">
+      <h2>Obras destacadas</h2>
+      <p>Contenido futuro</p>
+    </section>
+
+    <section id="artistas" class="seccion oculto">
+      <h2>Artistas</h2>
+      <p>Contenido futuro</p>
+    </section>
+
+    <section id="formulario" class="seccion oculto">
+      <h2>Enviá tu obra</h2>
+      <p>Formulario vendrá aquí.</p>
     </section>
   </main>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(seccion => {
+        seccion.classList.add('oculto');
+      });
+      document.getElementById(id).classList.remove('oculto');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
-

@@ -1,3 +1,4 @@
+
 html, body {
   height: 100%;
   margin: 0;
@@ -5,28 +6,66 @@ html, body {
   background: url('cemento2025.jpg') repeat-y center top fixed;
   background-size: cover;
   font-family: sans-serif;
-  color: black;
+  color: #111;
 }
 
 main {
+  padding: 0;
+}
+
+.seccion {
+  display: none;
+  background: transparent;
+  animation: fadeIn 0.4s ease-in-out forwards;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.seccion:not(.oculto) {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 100px;
-  padding: 50px;
+  gap: 30px;
 }
 
-.hero {
-  text-align: center;
-  padding: 80px;
-  font-size: 2rem;
-  background: transparent;
-}
-
-.bloque {
-  height: 1200px;
+.logo-hero {
+  max-width: 300px;
   width: 100%;
-  background: transparent;
+  margin-top: 20px;
 }
 
+.obra-hero {
+  max-height: 85vh;
+  width: auto;
+  margin-top: -80px;
+}
+
+.nav-bottom {
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 5;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
