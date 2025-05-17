@@ -35,10 +35,11 @@ main {
   margin-top: 20px;
 }
 
+
 .obra-hero {
-  max-height: 85vh;
+  max-height: 80vh;
   width: auto;
-  margin-top: -80px;
+  margin-top: -150px;
 }
 
 .nav-bottom {
