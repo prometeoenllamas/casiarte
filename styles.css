@@ -96,21 +96,22 @@ button:hover {
 }
 
 .galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px 100px;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 0;
-
+  padding: 60px 0;
 }
 
 .obra {
- .obra {
+  width: 200px;
+  padding: 0;
   background: transparent;
   border: none;
-  padding: 0;
   box-shadow: none;
+
 }
 
 .obra img {
