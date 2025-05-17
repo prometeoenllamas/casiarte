@@ -29,14 +29,14 @@ main {
   gap: 30px;
 }
 
-.logo-hero {
+ .logo-hero {
   max-width: 180px;
-  width: 100%;
-  margin-top: -20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .obra-hero {
-  max-height: 85vh;
+  max-height: 75vh;
   width: auto;
   margin-top: -180px;
 }
