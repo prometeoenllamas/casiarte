@@ -15,8 +15,7 @@ main {
 .seccion {
   display: none;
   animation: fadeIn 0.4s ease-in-out forwards;
-  background: url('background.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: transparent;
   min-height: 100vh;
   padding: 40px 20px;
 }
