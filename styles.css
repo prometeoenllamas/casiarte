@@ -14,9 +14,11 @@ main {
 
 .seccion {
   display: none;
+  animation: fadeIn 0.4s ease-in-out forwards;
   background: url('background.jpg') no-repeat center center fixed;
   background-size: cover;
-  animation: fadeIn 0.4s ease-in-out forwards;
+  min-height: 100vh;
+  padding: 40px 20px;
 }
 .seccion:not(.oculto) {
   display: flex;
@@ -77,13 +79,22 @@ h2 {
 }
 
 .obra, .artista {
-  background: rgba(255, 255, 255, 0.6);
+  background: transparent;
   border: 1px solid #ccc;
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+form {
+  background: transparent;
+}
+
+input, textarea {
+  background: rgba(255, 255, 255, 0.7); /* opcional, solo para legibilidad */
+}
+
 
 form {
   display: flex;
