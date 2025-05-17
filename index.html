@@ -17,17 +17,17 @@
       <h2>Obras seleccionadas</h2>
       <div class="galeria">
         <div class="obra">
-          <img src="obra1.jpg" alt="Obra 1" />
+          <img src="obra1.jpg" alt="Obra 1" onclick="mostrarZoom(this.src)" style="cursor:pointer;" />
           <h3>Artista sin nombre</h3>
           <p>“Una grieta como punto de partida”</p>
         </div>
         <div class="obra">
-          <img src="obra2.jpg" alt="Obra 2" />
+          <img src="obra2.jpg" alt="Obra 2" onclick="mostrarZoom(this.src)" style="cursor:pointer;" />
           <h3>Lucía Fantasma</h3>
           <p>“No sabía si mostrarla, por eso la subí.”</p>
         </div>
         <div class="obra">
-          <img src="obra3.jpg" alt="Obra 3" />
+          <img src="obra3.jpg" alt="Obra 3" onclick="mostrarZoom(this.src)" style="cursor:pointer;" />
           <h3>Anónimo</h3>
           <p>“Esto no está terminado. O quizás sí.”</p>
         </div>
@@ -56,6 +56,10 @@
     </ul>
   </nav>
 
+  <div id="zoom-modal" class="modal" onclick="cerrarZoom()">
+    <img id="zoom-img" src="" alt="Obra ampliada" />
+  </div>
+
   <script>
     function mostrarSeccion(id) {
       const secciones = document.querySelectorAll('.seccion');
@@ -64,6 +68,16 @@
       });
       document.getElementById(id).classList.remove('oculto');
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function mostrarZoom(src) {
+      document.getElementById("zoom-img").src = src;
+      document.getElementById("zoom-modal").style.display = "flex";
+    }
+
+    function cerrarZoom() {
+      document.getElementById("zoom-modal").style.display = "none";
+      document.getElementById("zoom-img").src = "";
     }
   </script>
 </body>

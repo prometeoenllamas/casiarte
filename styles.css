@@ -111,7 +111,6 @@ button:hover {
   background: transparent;
   border: none;
   box-shadow: none;
-
 }
 
 .obra img {
@@ -128,6 +127,26 @@ button:hover {
 .obra p {
   font-size: 0.95rem;
   color: #444;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 0 20px rgba(255,255,255,0.4);
+  border-radius: 4px;
 }
 
 @keyframes fadeIn {
