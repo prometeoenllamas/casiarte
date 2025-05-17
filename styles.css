@@ -104,14 +104,11 @@ button:hover {
 }
 
 .obra {
-  background: white;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+ .obra {
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
 }
 
 .obra img {
