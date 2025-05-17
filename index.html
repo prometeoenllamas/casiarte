@@ -5,64 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CasiArte</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- HEADER -->
   <header>
-    <h1>CasiArte</h1>
-    <nav>
-      <ul>
-        <li><a href="#destacadas">Obras Destacadas</a></li>
-        <li><a href="#artistas">Artistas</a></li>
-        <li><a href="#envia-tu-obra">Enviá tu obra</a></li>
-      </ul>
-    </nav>
+    <h1>casiarte</h1>
   </header>
 
-  <!-- HERO con imagen vertical y sin texto -->
+  <!-- HERO con imagen destacada -->
   <section id="hero">
     <img src="firma-destacada.jpg" alt="Obra destacada principal" />
   </section>
-
-  <!-- OBRAS DESTACADAS -->
-  <section id="destacadas">
-    <h2>Obras destacadas</h2>
-    <div class="galeria">
-      <!-- Obras aquí -->
-    </div>
-  </section>
-
-  <!-- ARTISTAS -->
-  <section id="artistas">
-    <h2>Artistas</h2>
-    <div class="artistas-grid">
-      <!-- Tarjetas de artistas -->
-    </div>
-  </section>
-
-  <!-- FORMULARIO -->
-  <section id="envia-tu-obra">
-    <h2>Enviá tu obra</h2>
-    <form action="procesar-formulario.php" method="POST">
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="mensaje">Mensaje o idea curatorial</label>
-      <textarea id="mensaje" name="mensaje" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>CasiArte &copy; 2025 – Un espacio fuera de lugar.</p>
-  </footer>
 
 </body>
 </html>

@@ -1,128 +1,51 @@
-/* Tipografía base */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #f0f0f0;
-  color: #1a1a1a;
+  font-family: 'Playfair Display', serif;
+  background-color: #d6d6d6;
+  background-image: radial-gradient(#dddddd 1px, transparent 1px),
+                    radial-gradient(#d0d0d0 1px, transparent 1px);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+  color: #111;
 }
 
-/* Header */
+/* Header estilo logo */
 header {
-  background-color: #ffffff;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #d4d4d4;
+  text-align: center;
+  padding: 40px 0 10px;
 }
 
 header h1 {
-  font-weight: 600;
-  font-size: 24px;
-  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  position: relative;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
+header h1::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 6px;
+  background: #c92626;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%) rotate(-5deg);
+  border-radius: 2px;
 }
 
-nav a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 300;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Hero */
+/* Hero con imagen vertical */
 #hero {
-  height: 100vh;
-  background-color: #e0e0e0;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 40px;
+  align-items: center;
+  padding: 60px 20px 100px;
 }
 
 #hero img {
   max-height: 90vh;
-  max-width: 100%;
-  object-fit: contain;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  border-radius: 12px;
-}
-
-/* Secciones */
-section {
-  padding: 60px 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-section h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-  font-weight: 600;
-  border-bottom: 1px solid #aaa;
-  display: inline-block;
-}
-
-/* Galería */
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-/* Artistas */
-.artistas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-/* Formulario */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 600px;
-}
-
-input, textarea {
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  resize: vertical;
-}
-
-button {
-  padding: 12px;
-  background-color: #1a1a1a;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-button:hover {
-  background-color: #333;
-}
-
-/* Footer */
-footer {
-  background-color: #ffffff;
-  border-top: 1px solid #d4d4d4;
-  padding: 20px 40px;
-  text-align: center;
-  font-size: 14px;
-  color: #666;
+  max-width: 90vw;
+  border: 3px solid #333;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
