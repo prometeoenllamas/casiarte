@@ -10,19 +10,21 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#destacadas">Obras destacadas</a></li>
-        <li><a href="#artistas">Artistas</a></li>
-        <li><a href="#envia-tu-obra">Enviá tu obra</a></li>
+        <li><a href="#" onclick="mostrarSeccion('hero')">Inicio</a></li>
+        <li><a href="#" onclick="mostrarSeccion('destacadas')">Obras destacadas</a></li>
+        <li><a href="#" onclick="mostrarSeccion('artistas')">Artistas</a></li>
+        <li><a href="#" onclick="mostrarSeccion('envia-tu-obra')">Enviá tu obra</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="hero">
-    <!-- Espacio para el cuadro principal -->
-  </section>
-
   <main>
-    <section id="destacadas">
+    <section id="hero" class="seccion">
+      <h1>Bienvenide a CasiArte</h1>
+      <p>Espacio reservado para el cuadro principal.</p>
+    </section>
+
+    <section id="destacadas" class="seccion oculto">
       <h2>Obras destacadas</h2>
       <div class="galeria">
         <div class="obra">Obra 1</div>
@@ -31,7 +33,7 @@
       </div>
     </section>
 
-    <section id="artistas">
+    <section id="artistas" class="seccion oculto">
       <h2>Artistas</h2>
       <div class="artistas-grid">
         <div class="artista">Artista 1</div>
@@ -40,7 +42,7 @@
       </div>
     </section>
 
-    <section id="envia-tu-obra">
+    <section id="envia-tu-obra" class="seccion oculto">
       <h2>Enviá tu obra</h2>
       <form action="#" method="POST">
         <label for="nombre">Nombre</label>
@@ -56,5 +58,15 @@
       </form>
     </section>
   </main>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(seccion => {
+        seccion.classList.add('oculto');
+      });
+      document.getElementById(id).classList.remove('oculto');
+    }
+  </script>
 </body>
 </html>
