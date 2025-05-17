@@ -7,22 +7,20 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#" onclick="mostrarSeccion('hero')">Inicio</a></li>
-        <li><a href="#" onclick="mostrarSeccion('destacadas')">Obras destacadas</a></li>
-        <li><a href="#" onclick="mostrarSeccion('artistas')">Artistas</a></li>
-        <li><a href="#" onclick="mostrarSeccion('envia-tu-obra')">Enviá tu obra</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <main>
     <section id="hero" class="seccion">
       <img src="logo.png" alt="Logo CasiArte" class="logo-hero" />
       <img src="obra.png" alt="Obra Principal" class="obra-hero" />
     </section>
+
+    <nav class="nav-bottom">
+      <ul>
+        <li><a href="#" onclick="mostrarSeccion('destacadas')">Obras destacadas</a></li>
+        <li><a href="#" onclick="mostrarSeccion('artistas')">Artistas</a></li>
+        <li><a href="#" onclick="mostrarSeccion('envia-tu-obra')">Enviá tu obra</a></li>
+      </ul>
+    </nav>
 
     <section id="destacadas" class="seccion oculto">
       <h2>Obras destacadas</h2>
@@ -66,6 +64,7 @@
         seccion.classList.add('oculto');
       });
       document.getElementById(id).classList.remove('oculto');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
 </body>

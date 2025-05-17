@@ -7,10 +7,42 @@ body {
   color: #111;
 }
 
-header {
-  padding: 20px;
+main {
+  padding: 0;
+}
+
+.seccion {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+.seccion:not(.oculto) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 60px 20px 40px;
+}
+
+.logo-hero {
+  max-width: 300px;
+  width: 80%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.obra-hero {
+  max-height: 70vh;
+  width: auto;
+  border: 2px solid #222;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.nav-bottom {
+  background: rgba(255,255,255,0.5);
   text-align: center;
-  background: transparent;
+  padding: 20px;
 }
 
 nav ul {
@@ -27,43 +59,6 @@ nav a {
   color: #111;
   font-weight: bold;
   cursor: pointer;
-}
-
-main {
-  padding: 40px 20px;
-}
-
-.seccion {
-  display: none;
-  animation: fadeIn 0.4s ease-in-out forwards;
-}
-
-.seccion:not(.oculto) {
-  background: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  min-height: 100vh;
-}
-
-.logo-hero {
-  max-width: 400px;
-  width: 80%;
-  height: auto;
-}
-
-.obra-hero {
-  max-height: 70vh;
-  width: auto;
-  border: 2px solid #222;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 h2 {
@@ -112,4 +107,9 @@ button {
 
 button:hover {
   background-color: #333;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
